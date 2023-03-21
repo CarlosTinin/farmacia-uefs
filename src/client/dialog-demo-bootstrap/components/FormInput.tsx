@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { Form, Button, Col, Row } from 'react-bootstrap';
+import { Form, Button, Col, Row} from 'react-bootstrap';
 
 interface FormInputProps {
   submitNewSheet: (sheetName: string) => {
@@ -25,12 +25,12 @@ const FormInput = ({ submitNewSheet }: FormInputProps) => {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group controlId="formNewSheet">
-        <Form.Label>Add a new sheet</Form.Label>
+        <Form.Label>Adicionar nova página</Form.Label>
         <Row>
           <Col xs={10}>
             <Form.Control
               type="text"
-              placeholder="Sheet name"
+              placeholder="Nome da página"
               value={newSheetName}
               onChange={handleChange}
             />
@@ -42,10 +42,10 @@ const FormInput = ({ submitNewSheet }: FormInputProps) => {
           </Col>
         </Row>
         <Form.Text className="text-muted">
-          Enter the name for your new sheet.
+          Insira o novo nome para a planilha
         </Form.Text>
         <Form.Text className="text-muted">
-          <i>This component is written in typescript!</i>
+          <i>Teste de componente 123</i>
         </Form.Text>
       </Form.Group>
     </Form>

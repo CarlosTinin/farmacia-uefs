@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Button, ListGroup } from 'react-bootstrap';
 import FormInput from './FormInput';
+import Navigation from './Navigation';
 
 // This is a wrapper for google.script.run that lets us use promises.
 import { serverFunctions } from '../../utils/serverFunctions';
 
-const SheetEditor = () => {
+const MainApplication = () => {
   const [names, setNames] = useState([]);
 
   useEffect(() => {
@@ -33,6 +34,7 @@ const SheetEditor = () => {
 
   return (
     <div style={{ padding: '3px', overflowX: 'hidden' }}>
+      <Navigation/>
       <p>
         <b>☀️ Bootstrap demo! ☀️</b>
       </p>
@@ -81,4 +83,4 @@ const SheetEditor = () => {
   );
 };
 
-export default SheetEditor;
+export default MainApplication;

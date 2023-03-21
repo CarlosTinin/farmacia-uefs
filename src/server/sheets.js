@@ -29,3 +29,7 @@ export const setActiveSheet = (sheetName) => {
   SpreadsheetApp.getActive().getSheetByName(sheetName).activate();
   return getSheetsData();
 };
+
+export const doGet = (e) => {
+  return HtmlService.createHtmlOutputFromFile('dialog-demo-bootstrap');
+}
