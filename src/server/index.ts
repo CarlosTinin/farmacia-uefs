@@ -1,10 +1,6 @@
 import {
   onOpen,
-  openDialog,
   openDialogBootstrap,
-  openDialogMUI,
-  openDialogTailwindCSS,
-  openAboutSidebar,
 } from './ui';
 
 import { getSheetsData, addSheet, deleteSheet, setActiveSheet, doGet } from './sheets';
@@ -13,11 +9,7 @@ import { getSheetsData, addSheet, deleteSheet, setActiveSheet, doGet } from './s
 export {
   doGet,
   onOpen,
-  //openDialog,
   openDialogBootstrap,
-  //openDialogMUI,
-  //openDialogTailwindCSS,
-  //openAboutSidebar,
   getSheetsData,
   addSheet,
   deleteSheet,
